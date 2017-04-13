@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.9.20
 
-MAINTAINER Samuel Cozannet <samuel.cozannet@madeden.com>
+MAINTAINER Ho-Sheng Hsiao <hosh@legal.io>
 LABEL version="1.0.0"
 LABEL app="pubsub-emulator"
 
