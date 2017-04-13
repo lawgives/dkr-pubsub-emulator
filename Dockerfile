@@ -23,8 +23,10 @@ RUN \
 RUN mkdir ${DATA_DIR}
 
 ADD start-pubsub /etc/my_init.d/00_start-pubsub
-
 RUN chmod +x /etc/my_init.d/00_start-pubsub
+
+RUN mkdir /etc/service/pubsub-log-forwarder
+ADD pubsub-log-forwarder /etc/service/pubsub-log-forwarder/run
 
 CMD ["/sbin/my_init"]
 
