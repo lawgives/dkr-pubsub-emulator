@@ -8,10 +8,10 @@ ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
 ENV DATA_DIR "/data"
 ENV HOST_PORT 8538
 
-RUN apt-get update && apt-get upgrade && \
+RUN apt-get update && apt-get upgrade -y && \
 	apt-get install -y curl \
 		python \
-		openjdk-7-jre && \
+		openjdk-8-jre && \
 	apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN \
