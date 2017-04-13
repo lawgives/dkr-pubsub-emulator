@@ -14,8 +14,8 @@ TODO:
 # How to use for Docker
 
 ```
-$ docker pull legalio/pubsub-emulator:20170413
-$ docker run -it --name pubsub-emulator -p 8538:8538 legalio/pubsub-emulator:20170413
+$ docker pull docker.io/legalio/pubsub-emulator:20170413
+$ docker run -it --name pubsub-emulator -p 8538:8538 docker.io/legalio/pubsub-emulator:20170413
 ```
 
 Now you need to run the equivalent of the ```$(gcloud beta emulators pubsub env-init)``` command
